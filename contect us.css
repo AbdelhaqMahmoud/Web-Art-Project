@@ -217,3 +217,80 @@ body{
     font-size:14px;
     opacity:.7;
 }
+
+
+   
+@media (max-width: 768px) {
+    
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        height: auto;       
+    }
+
+    .header {
+        height: auto; 
+        padding: 15px 5%;
+        flex-direction: column; 
+        gap: 10px;
+        text-align: center;
+        display: block;          
+    }
+
+    
+    .header h3 {
+        margin-right: 0; 
+        font-size: 24px;
+        margin-bottom: 12px;      
+        text-align: center;
+    }
+
+   
+    .header a {
+        display: inline-block;   
+        margin: 0 8px;            
+        font-size: 16px;
+        text-decoration: none;
+    }
+    .main-wrapper {
+        flex-direction: column; 
+        padding: 180px 20px 40px; 
+        gap: 30px;
+    }
+
+    .form-section, .info-card {
+        width: 100%;
+        flex: none;
+    }
+
+    .info-card {
+        text-align: center;   
+    }
+
+    .detail-row {
+        flex-direction: row;   
+        justify-content: center;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center; 
+    }
+
+    .footer {
+        position: static; 
+        margin-top: 40px;
+        padding: 30px 20px 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-links {
+        justify-content: center;
+        gap: 20px;
+    }
+}

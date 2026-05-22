@@ -192,3 +192,87 @@ img{
     font-size:14px;
     opacity:.7;
 }
+
+@media (max-width: 768px) {
+    
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+   
+    
+   
+    .header {
+        height: auto; 
+        padding: 15px 5%;
+        flex-direction: column;  
+        gap: 10px;
+        text-align: center;
+        display: block;           
+    }
+
+    
+    .header h3 {
+        margin-right: 0; 
+        font-size: 24px;
+        margin-bottom: 12px;      
+        
+        text-align: center;
+    }
+
+    .header a {
+        display: inline-block;    
+        margin: 0 8px;            
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .selection {
+        margin: 160px auto 40px; 
+        
+        padding: 0 15px;
+    }
+
+    .selection h1 {
+        font-size: 28px;
+    }
+
+    .selection button {
+        margin-right: 5px;
+        margin-bottom: 10px; 
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    /* 4. جعل شبكة الصور مرنة ومناسبة للموبايل */
+    .parent {
+        gap: 20px;
+        padding: 10px 20px;
+    }
+
+    .parent div, 
+    .parent .item, 
+    .parent [class^="child-"] {
+        width: 100% !important;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    img {
+        height: 220px;
+    }
+
+    /* 5. تنسيق الفوتر */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-links {
+        justify-content: center;
+        gap: 15px;
+    }
+}
