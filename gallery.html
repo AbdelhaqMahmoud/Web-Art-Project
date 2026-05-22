@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtGallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+                        <!-- header -->
+                         
+    <div class="parent-header">
+            <div class="header">
+            <!-- Enter Path of Your Page In href -->
+            <h3>ArtGallery</h3>
+            <a href="index.html">Home</a>
+            <a href="#">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contect us.html">Contact</a>
+        </div>
+    </div>
+                       <!-- catagpry par -->
+
+   <div class="selection">
+    <h1>Gallery</h1>
+    <button class="filter-btn" data-category="all">All</button>
+    <button class="filter-btn" data-category="painting">Painting</button>
+    <button class="filter-btn" data-category="sculpture">Sculpture</button>
+    <button class="filter-btn" data-category="photography">Photography</button>
+</div>
+
+<div class="parent">
+    <div class="item painting">
+        <img src="images/about.jpg" alt="" class="gallery-img">
+        <h4>Starry Night</h4>
+        <span class="artist">Vincent Van Gogh</span>
+    </div>
+
+    <div class="item sculpture">
+        <img src="images/Home_Image.png" alt="" class="gallery-img">
+        <h4>The Thinker</h4>
+        <span class="artist">Auguste Rodin</span>
+    </div>
+    <div class="item photography">
+        <img src="images/fb6630ae-f7a3-434e-b583-ddb28defa805.jpg" alt="New Art" class="gallery-img">
+        <h4>Nature Soul</h4>
+        <span class="artist">Unknown Artist</span>
+    </div>
+
+    </div>
+
+                       <!-- photo section -->
+    <div class="parent">
+        <div class="child-one">
+            <img src="images/24484c55-1a29-4582-bab2-a7012076b95d.jpg" alt="" class="gallery-img">
+            <h4>Starry Night</h4>
+            <span class="artist">Vincent Van Gogh</span>
+        </div>
+    
+        <div class="child-two">
+            <img src="images/c0df92f3-8492-4a34-a3f5-ec96adc7b2e0.jpg" alt="" class="gallery-img">
+            <h4>The Thinker</h4>
+            <span class="artist">Auguste Rodin</span>
+        </div>
+    
+        <div class="child-three">
+            <img src="images/33594aff-b28b-488f-b584-7030d7c7cd04.jpg" alt="" class="gallery-img">
+            <h4>The Persistence Of Memory</h4>
+            <span class="artist">Salvardor Dail</span>
+        </div>
+    
+        <div class="child-four">
+            <img src="images/948e6e2e-4aca-407e-85cd-2f320fc71a6d.jpg" alt="" class="gallery-img">
+            <h4>Mona Lisa</h4>
+            <span class="artist">Leonardo De Vici</span>
+        </div>
+    
+        <div class="child-five">
+            <img src="images/4f3d8421-062a-45f6-ae53-33efc64da6b2.jpg" alt="" class="gallery-img">
+            <h4>The Scream</h4>
+            <span class="artist">Edvard Munch</span>
+        </div>
+    
+        <div class="child-six">
+            <img src="images/fb6630ae-f7a3-434e-b583-ddb28defa805.jpg" alt="" class="gallery-img">
+            <h4>Girl With A Pearl Earring</h4>
+            <span class="artist">Johannes Varmeer</span>
+        </div>
+    </div>
+                   <!-- footer -->
+    <footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-title">ArtGallery</div>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="#">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contect us.html">Contact</a>
+        </div>
+
+        <div class="social-icons">
+                <a href="#" class="icon-link"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="icon-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="icon-link"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+    </div>
+
+        <div class="copyright">
+            <p>© 2026 All Rights Reserved</p>
+        </div>
+
+    </footer>
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.getAttribute('data-category');
+
+                galleryItems.forEach(item => {
+                    if (category === 'all' || item.classList.contains(category)) {
+                        item.style.display = 'flex';  
+                    } else {
+                        item.style.display = 'none'; 
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
